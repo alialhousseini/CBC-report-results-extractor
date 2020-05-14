@@ -7,7 +7,7 @@ This project is for extracting important features from a CBC result.
 Just run the cells using jupyter lab or notebook
 
 ## Requirements
-*OpenCV
-*Numpy
-*Pytesseract
-*PIL
+OpenCV
+Numpy
+Pytesseract
+PIL
