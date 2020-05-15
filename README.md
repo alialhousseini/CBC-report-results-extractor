@@ -7,9 +7,9 @@ This project is for extracting important features from a CBC result.
 Just run the cells using jupyter lab or notebook
 
 ## Description of Code
-##### Cell 1
+#### Cell 1
 Importing of needed library and locate the directory of pytesseract
-##### Cell 2 and 3
+#### Cell 2 and 3
 1. Defining a function called process_image that takes an image as parameter. This function performs image denoising using Non-local Means Denoising algorithm [Check algorithm here](http://www.ipol.im/pub/algo/bcm_non_local_means_denoising/) with several computational optimizations.It converts image to CIELAB colorspace and then separately denoise L and AB components with given h parameters (h=10).
 2. Defining a function called extract_text to extracting the text and calling the label function for a final res of labels. This function uses .image_to_string from pytesseract library to returns the result of a Tesseract OCR run on the image to string.
 And then the returned result will be in a list called 'lst' and we split the every term in the list by '\n' (NEW LINE).
